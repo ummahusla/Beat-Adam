@@ -1,9 +1,10 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Beat Adam",
+  "description": "This extension helps you to track your leaderboard progress during the week",
   "version": "1.0",
+  "author": "Edvins Antonovs",
 
   "browser_action": {
     "default_icon": "icon.png",
