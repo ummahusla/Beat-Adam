@@ -12,11 +12,16 @@
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
       }
+      #wrapper {
+        min-width: 300px;
+        padding: 10px;
+      }
       #status {
         /* avoid an excessively wide status text */
         white-space: pre;
         text-overflow: ellipsis;
         overflow: hidden;
+
         max-width: 400px;
       }
     </style>
@@ -30,8 +35,24 @@
     <script src="popup.js"></script>
   </head>
   <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
+    <!-- <div id="status"></div>
+    <img id="image-result" hidden> -->
+    <div id="wrapper">
+      <h1>Hi Edvins!</h1>
+      <p>Suspendisse sit amet magna nunc. Suspendisse quis justo ac massa vulputate aliquet. Ut venenatis diam.</p>
+      <h4>This week progress</h4>
+      <ul>
+        <li>PR authored: <strong>4</strong></li>
+        <li>PR reviewed: <strong>18</strong></li>
+        <li>Changes made: <strong>44</strong></li>
+      </ul>
+      <h4>Last week progress</h4>
+      <ul>
+        <li>PR authored: <strong>10</strong></li>
+        <li>PR reviewed: <strong>20</strong></li>
+        <li>Changes made: <strong>75</strong></li>
+      </ul>
+    </div>
+
   </body>
 </html>
-
