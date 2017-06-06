@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Beat Adam",
-  "description": "This extension helps you to track metrics during the week",
+  "description": "This extension will help you to track metrics during the week",
   "version": "1.0",
   "author": "Edvins Antonovs",
 
