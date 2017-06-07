@@ -3,29 +3,21 @@
 <html>
   <head>
     <title>Beat Adam</title>
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #wrapper {
-        overflow: hidden;
-        width: 250px;
-        padding: 10px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
-    <script src="popup.js"></script>
-    <script src="script.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div id="wrapper">
 
     <div>
-      <h3>Hello,</h3>
-      <p>Please enter your name : </p>
-      <input id="name_textbox" />
-      <button id="ok_btn" type="button">OK</button>
+      <h3>Hello, <span id="user_name"></span></h3>
+      <div id="user_name_wrap">
+        <p>Please enter your name : </p>
+        <input id="user_name_input" placeholder="e.g. John" />
+        <button id="submit_user_name" type="button">OK</button>
+      </div>
     </div>
 
       <hr />
