@@ -1,45 +1,34 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
+
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>Beat Adam</title>
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
       }
       #wrapper {
-        min-width: 300px;
-        padding: 10px;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
         overflow: hidden;
-
-        max-width: 400px;
+        width: 250px;
+        padding: 10px;
       }
     </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
     <script src="popup.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <!-- <div id="status"></div>
-    <img id="image-result" hidden> -->
     <div id="wrapper">
-      <h1>Hi Edvins!</h1>
-      <p>Suspendisse sit amet magna nunc. Suspendisse quis justo ac massa vulputate aliquet. Ut venenatis diam.</p>
+
+    <div>
+      <h3>Hello,</h3>
+      <p>Please enter your name : </p>
+      <input id="name_textbox" />
+      <button id="ok_btn" type="button">OK</button>
+    </div>
+
+      <hr />
       <h4>This week progress</h4>
       <ul>
         <li>PR authored: <strong>4</strong></li>
@@ -50,15 +39,6 @@
         <li>Bug tasks fixed: <strong>1</strong></li>
       </ul>
       <hr />
-      <h4>Last week progress</h4>
-      <ul>
-        <li>PR authored: <strong>4</strong></li>
-        <li>PR reviewed: <strong>18</strong></li>
-        <li>Commits made: <strong>75</strong></li>
-        <li>Task created: <strong>4</strong></li>
-        <li>Bugs created: <strong>1</strong></li>
-        <li>Bug tasks fixed: <strong>2</strong></li>
-      </ul>
     </div>
 
   </body>
