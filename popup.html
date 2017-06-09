@@ -11,26 +11,28 @@
   <body>
     <div id="wrapper">
 
-    <div>
-      <h3>Hello, <span id="user_name"></span></h3>
-      <div id="user_name_wrap">
-        <p>Please enter your name : </p>
-        <input id="user_name_input" placeholder="e.g. John" />
-        <button id="submit_user_name" type="button">OK</button>
+      <div>
+        <h3><span id="user_name"></span></h3>
       </div>
-    </div>
 
-      <hr />
-      <h4>This week progress</h4>
-      <ul>
-        <li>PR authored: <strong>4</strong></li>
-        <li>PR reviewed: <strong>18</strong></li>
-        <li>Commits made: <strong>44</strong></li>
-        <li>Task created: <strong>1</strong></li>
-        <li>Bugs created: <strong>0</strong></li>
-        <li>Bug tasks fixed: <strong>1</strong></li>
-      </ul>
-      <hr />
+      <div id="user_name_wrap">
+        <label>Please enter your name</label>
+        <input id="user_name_input" placeholder="e.g. John" />
+        <button id="submit_user_name" type="button">Save</button>
+      </div>
+
+      <div id="user_metrics_wrap" style="display: none">
+        <h4>Your metrics this week</h4>
+        <ul>
+          <li>PR authored: <strong>4</strong></li>
+          <li>PR reviewed: <strong>18</strong></li>
+          <li>Commits made: <strong>44</strong></li>
+          <li>Task created: <strong>1</strong></li>
+          <li>Bugs created: <strong>0</strong></li>
+          <li>Bug tasks fixed: <strong>1</strong></li>
+        </ul>
+      </div>
+
     </div>
 
   </body>
